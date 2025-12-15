@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>LUXED</title>
+</head>
+
+<body class="">
+  <header class="bg-[#1F1F1F] W-[100%] sticky top-0  z-50">
+    <div class="max-w-5xl mx-auto py-3 px-8">
+      <div class="flex justify-between items-center text-white ">
+        <div >
+          <img src="./images/luxed.png" alt="">
+        </div>
+        <nav>
+          <ul class="hidden lg:flex gap-5 text-base">
+            <a href="#">
+              <li>Buy a Car</li>
+            </a>
+            <a href="#">
+              <li>Rent a Car</li>
+            </a>
+            <a href="#">
+              <li>Financing</li>
+            </a>
+            <a href="#">
+              <li>About Us</li>
+            </a>
+          </ul>
+        </nav>
+        <div class="lg:flex items-center gap-2 hidden">
+          <div>
+            <img src="./images/search.png" alt="">
+          </div>
+          <div>
+            <img src="./images/love.png" alt="">
+          </div>
+          <div>
+            <img src="./images/order.png" alt="">
+          </div>
+          <div>
+            <img src="./images/order.png" alt="">
+          </div>
+        </div>
+        <button id="menu-btn" class=" flex flex-col justify-between w-8 h-6 lg:hidden">
+          <span class="block h-1 w-full bg-white rounded transition-all"></span>
+          <span class="block h-1 w-full bg-white rounded transition-all"></span>
+          <span class="block h-1 w-full bg-white rounded transition-all"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <!-- mobile nav -->
+  <div id="mobile" class="hide lg:hidden bg-[#1F1F1F] h-[100vh] w-[100%] text-white pt-[50px] fixed top-15 z-50">
+    <ul class="flex flex-col items-center gap-5 text-base font-normal">
+      <li>Buy a Car</li>
+      <li>Rent a Car</li>
+      <li>Financing</li>
+      <li>About Us</li>
+    </ul>
+  </div>
+  <!-- == home page == -->
+  <main class="bg-[#101010] w-[100%] text-white  ">
+    <div class="max-w-5xl mx-auto px-[30px] py-[50px] relative">
+      <div class="flex flex-col justify-center items-center gap-5 ">
+        <div class="flex flex-col items-center gap-4">
+          <h1 class="lg:text-5xl text-3xl text-center font-normal capitalize "> <span class="text-[#AFA827]">Buy</span>
+            or <span class="text-[#AFA827]">rent</span> your
+            dream car</h1>
+          <p class="lg:w-[70%] w-[100%] text-center text-base">Looking to buy or rent a car? Explore our vast
+            inventory of cars for sales or rent are unbeatable
+            prices. Start your journey with us today and find the perfect vehicle for your needs!</p>
+          <div class="grid sm:grid-cols-2 grid-cols-1 gap-4 mb-5 ">
+            <button
+              class="py-2 px-4 border-1 border-green-500 rounded-[20px] text-white hover:bg-green-500 active:opacity-75 transition-all duration-300 ease-in-out">Browse
+              cars for sales</button>
+            <button
+              class="py-2 px-4 border-1 border-green-500 rounded-[20px] text-white hover:bg-green-500 active:opacity-75 transition-all duration-300 ease-in-out">Explore
+              car rentals</button>
+          </div>
+        </div>
+        <div class="text-base">
+          <div class=""><img src="./images/white-jeep.png" alt=""></div>
+          <div class="hidden lg:flex absolute left-0 top-70"><img src="./images/thumbnail.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- == About Us == -->
+  <section class="mt-[50px]">
+    <div class="max-w-5xl mx-auto px-[30px] py-[50px] ">
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 items-center gap-4">
+        <div>
+          <img class="w-[500px]" src="./images/about lady.png" alt="">
+        </div>
+        <div class="bg-[#F6F6F6] rounded-[25px]">
+          <div class="flex flex-col items-center gap-2 p-[20px] ">
+            <h2 class="text-black text-2xl capitalize">about <span class="text-[#AFA827]">us</span></h2>
+            <p class=" text-base text-center">Your trusted source for buying or renting cars. We offer a
+              wide selection, transperent
+              pricing, and flexible financing options, all designed to make your experience smooth and
+              hasskle-free</p>
+            <div>
+              <button class="bg-[#06985B] text-white text-base py-2 px-4 rounded-[20px] active:opacity-80">Learn
+                more</button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img class="w-[500px]" src="./images/about man.png" alt="">
+        </div>
+      </div>
+      <div class="bg-[#F6F6F6] p-[25px] rounded-2xl grid grid-cols-5 items-center gap-3 mt-5">
+        <div><img src="./images/ring1.png" alt=""></div>
+        <div><img src="./images/rolss2.png" alt=""></div>
+        <div><img src="./images/dbr3.png" alt=""></div>
+        <div><img src="./images/jagular4.png" alt=""></div>
+        <div><img src="./images/audion5.png" alt=""></div>
+      </div>
+    </div>
+  </section>
+  <!-- == Cars on sales == -->
+  <section class="text-black">
+    <div class="max-w-5xl mx-auto px-[30px] py-[50px] ">
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 mb-[50px]">
+        <div>
+          <h2 class="text-3xl font-normal lg:w-[80%]">Top picks of cars on <span class="text-[#AFA827]">sales</span>
+          </h2>
+        </div>
+        <div>
+          <p class="text-base">Discover our best deals of cars for sales. handpicked just for you, these cars
+            come with
+            excellent pricing and top quality.</p>
+        </div>
+        <div class="">
+          <button class="bg-[#06985B]  text-white text-base py-2 px-4 rounded-[20px] active:opacity-80 ">View
+            All</button>
+        </div>
+      </div>
+      <!-- == ge -->
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 text-base mb-[30px] ">
+        <div class="bg-[#04995B] text-white rounded-2xl shadow-md shadow-[#101010]">
+          <div class="p-[20px] flex flex-col  gap-4">
+            <div class="flex justify-between gap-4 items-center">
+              <div>
+                <h2 class="font-semibold">2022 Tesla Model 3</h2>
+              </div>
+              <div>
+                <img src="./images/white-arrow.png" alt="">
+              </div>
+            </div>
+            <div class="flex justify-between gap-3 items-center lg:text-[15px] text-base">
+              <div>
+                <p>Price: <span class="font-semibold ">$42,000</span></p>
+              </div>
+              <div>
+                <p>Mileage: <span class="font-semibold ">15,000 miles</span></p>
+              </div>
+            </div>
+            <div>
+              <p class="text-base">Electric sedan with autopilot, full self-driving capability, and a
+                sleek design.
+                Perfect for ecoconscious drivers. </p>
+            </div>
+            <div>
+              <img src="./images/bg-green-white.png" alt="">
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="bg-[#F6F6F6] text-[#838383] rounded-2xl shadow-md shadow-[#101010] ">
+          <div class="p-[20px] flex flex-col  gap-4">
+            <div class="flex justify-between gap-4 items-center">
+              <div>
+                <h2 class="font-semibold text-black">Rolls-Royce Ghost 2023</h2>
+              </div>
+              <div>
+                <img src="./images/green-arrow.png" alt="">
+              </div>
+            </div>
+            <div class="flex justify-between gap-4 items-center lg:text-[15px] text-base">
+              <div>
+                <p>Price: <span class="font-semibold text-black">$345,000</span></p>
+              </div>
+              <div>
+                <p>Mileage: <span class="font-semibold text-black">5,000 miles</span> </p>
+              </div>
+            </div>
+            <div>
+              <p class="text-base">2023 Rolls-Royce Ghost delivery luxury, V12 power, and advanced tech
+                for a
+                premium driving experience. </p>
+            </div>
+            <div>
+              <img src="./images/royswhite2.png" alt="">
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="bg-[#F6F6F6] text-[#838383] rounded-2xl shadow-md shadow-[#101010]">
+          <div class="p-[20px] flex flex-col  gap-4">
+            <div class="flex justify-between gap-4 items-center ">
+              <div>
+                <h2 class="font-semibold text-black">2021 BMW X5</h2>
+              </div>
+              <div>
+                <img src="./images/green-arrow.png" alt="">
+              </div>
+            </div>
+            <div class="flex justify-between gap-4 items-center lg:text-[15px] text-base">
+              <div>
+                <p>Price: <span class="font-semibold text-black">$55,000</span></p>
+              </div>
+              <div>
+                <p>Mileage: <span class="font-semibold text-black">25,000 miles</span> </p>
+              </div>
+            </div>
+            <div>
+              <p class="text-base">Electric sedan with autopilot, full self-driving capability, and a
+                sleek design.
+                Perfect for ecoconscious drivers. </p>
+            </div>
+            <div>
+              <img src="./images/BMW X5.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- == == -->
+  <section class=" w-[100%] text-white ">
+    <div class="max-w-5xl mx-auto px-[30px] py-[50px] bg-black rounded-2xl">
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 ">
+        <div>
+          <h2 class="capitalize text-3xl lg:w-[60%]">best car <span class="text-[#AFA827]">rental</span> deals
+          </h2>
+        </div>
+        <div>
+          <p class="text-base">Looking for a rental car? check out our selection of cars available for rent
+            with flexible terms
+            and
+            compatitive rates.</p>
+        </div>
+        <div class="">
+          <button class="bg-[#06985B]  text-white text-base py-2 px-4 rounded-[20px] active:opacity-80 ">View
+            All</button>
+        </div>
+      </div>
+      <!--  -->
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 text-base my-[30px] ">
+        <div class="bg-white rounded-2xl px-2 py-4">
+          <div class="flex flex-col gap-3 items-center">
+            <div>
+              <img src="./images/mercedes.png" alt="">
+            </div>
+            <div class="bg-[#06985B] text-white rounded-md p-4 lg:text-[15px] text-base">
+              <div class="flex justify-between gap-4 items-center">
+                <div>
+                  <h2 class="font-semibold">Mercedes-Benz C-Class</h2>
+                </div>
+                <div>
+                  <img src="./images/white-arrow.png" alt="">
+                </div>
+              </div>
+              <div class="flex justify-between gap-4 items-center mt-2">
+                <div>
+                  <p>Price: <span class="font-semibold"> $150/day</span></p>
+                </div>
+                <div>
+                  <p>Mileage: <span class="font-semibold">Unlimited</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="bg-white rounded-2xl px-2 py-4">
+          <div class="flex flex-col gap-3 items-center">
+            <div>
+              <img src="./images/audi.png" alt="">
+            </div>
+            <div class="bg-[#F6F6F6] text-black rounded-md p-4 lg:text-[15px] text-base shadow-black/50 shadow-sm">
+              <div class="flex justify-between gap-4 items-center">
+                <div>
+                  <h2 class="font-semibold text ">2022 Audi Q7</h2>
+                </div>
+                <div>
+                  <img src="./images/green-arrow.png" alt="">
+                </div>
+              </div>
+              <div class="flex justify-between gap-3 items-center mt-2 lg:text-[15px] text-base">
+                <div>
+                  <p class="text-[#CCCCCC]">Price: <span class="font-semibold text-black">$180/day</span></p>
+                </div>
+                <div>
+                  <p class="text-[#CCCCCC]">Mileage: <span class="font-semibold text-black">Unlimited</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="bg-white rounded-2xl px-2 py-4">
+          <div class="flex flex-col gap-3 items-center">
+            <div class="mb-3">
+              <img src="./images/ford.png" alt="">
+            </div>
+            <div class="bg-[#F6F6F6] text-black rounded-md p-4 lg:text-[15px] text-base shadow-black/50 shadow-sm">
+              <div class="flex justify-between gap-4 items-center">
+                <div>
+                  <h2 class="font-semibold text ">2021 Ford Mustang</h2>
+                </div>
+                <div>
+                  <img src="./images/green-arrow.png" alt="">
+                </div>
+              </div>
+              <div class="flex justify-between gap-3 items-center mt-2 lg:text-[15px] text-base">
+                <div>
+                  <p class="text-[#CCCCCC]">Price: <span class="font-semibold text-black">$200/day</span></p>
+                </div>
+                <div>
+                  <p class="text-[#CCCCCC]">Mileage: <span class="font-semibold text-black">Unlimited</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--== choose us ==-->
+  <section class=" w-[100%] text-white ">
+    <div class="max-w-5xl mx-auto px-[30px] py-[50px] text-black">
+      <div class="flex flex-col items-center gap-3">
+        <h2 class="text-3xl font-normal">why <span class="text-[#B5AA13]">choose</span> us?</h2>
+        <p class="lg:w-[60%] text-center mb-[50px]">We provide a smooth car buying or renting experience with
+          great
+          vehicle options, clear pricing, and top-notch customer suport.</p>
+      </div>
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 text-base">
+        <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-3">
+            <div>
+              <img src="./images/car111.png" alt="">
+            </div>
+            <div>
+              <h2 class="font-semibold">Wide selection of vehicles</h2>
+              <p class="mt-2 text-base ">Choose from a diverse selection of cars to suit tour style and
+                budget, whether you are looking to buy or rent.</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="flex flex-col gap-3 mt-3">
+            <div>
+              <img src="./images/hand2.png" alt="">
+            </div>
+            <div>
+              <h2 class="font-semibold">transperent Pricing</h2>
+              <p class="mt-2 text-base">We believe in clear, upfront with no hidden fees, ensuring you get
+                the best deal on your vehicle.</p>
+            </div>
+          </div>
+        </div>
+        <!-- == second div == -->
+        <div>
+          <img src="./images/middle-img.png" alt="">
+        </div>
+        <!--== third div  ==-->
+        <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-3">
+            <div>
+              <img src="./images/flexible.png" alt="">
+            </div>
+            <div>
+              <h2 class="font-semibold">Flexible Financing Options</h2>
+              <p class="mt-2 text-base ">Choose from a diverse selection of cars to suit tour style and
+                budget, whether you are looking to buy or rent.</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="flex flex-col gap-3 mt-3">
+            <div>
+              <img src="./images/settings.png" alt="">
+            </div>
+            <div>
+              <h2 class="font-semibold">Exceptional Customer Service</h2>
+              <p class="mt-2 text-base">We believe in clear, upfront with no hidden fees, ensuring you get
+                the best deal on your vehicle.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--  -->
+  <section class=" w-[100%] text-white ">
+    <div class="max-w-5xl mx-auto px-[30px] py-[50px] text-black">
+      <div>
+        <div class=" grid lg:grid-cols-2 grid-cols-1 gap-3">
+          <h2 class="capitalize text-3xl font-normal lg:w-[60%] ">frequently asked <span
+              class="text-[#B5AA13]">questions</span></h2>
+          <div class="bg-[#06985B] text-white rounded-md p-4 lg:text-[15px] text-base mb-3">
+            <div class="flex justify-between gap-4 items-center">
+              <div>
+                <h2 class="font-semibold">How can i buy a car from your website</h2>
+              </div>
+              <div>
+                <img src="./images/white-arrow.png" alt="">
+              </div>
+            </div>
+            <div>
+              <p class="text-[15px] mt-2">Simply browse our collection of cars for sale, select the one
+                that fit
+                your needs, and
+                follow the steps to complete the purchase online. Our team is here to assist if you need
+                help</p>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="grid lg:grid-cols-2 grid-cols-1 gap-3">
+          <div class="">
+            <img src="./images/redcar.png" alt="">
+          </div>
+          <div class="grid grid-row-4 gap-3">
+            <div class="bg-[#F6F6F6] text-black rounded-md p-4 lg:text-[15px] text-base shadow-black shadow-sm">
+              <div class="flex justify-between gap-4 items-center">
+                <p class="font-semibold">What are the rental terms for cars?</p>
+                <div>
+                  <img src="./images/green-arrow.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#F6F6F6] text-black rounded-md p-4 lg:text-[15px] text-base shadow-black shadow-sm">
+              <div class="flex justify-between gap-4 items-center">
+                <p class="font-semibold">Do you offer financing options?</p>
+                <div>
+                  <img src="./images/green-arrow.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#F6F6F6] text-black rounded-md p-4 lg:text-[15px] text-base shadow-black shadow-sm">
+              <div class="flex justify-between gap-4 items-center">
+                <p class="font-semibold">Can i test drive a car before purchasing?</p>
+                <div>
+                  <img src="./images/green-arrow.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="bg-[#F6F6F6] text-black rounded-md p-4 lg:text-[15px] text-base shadow-black shadow-sm">
+              <div class="flex justify-between gap-4 items-center">
+                <p class="font-semibold">What document do i need to rent a car?</p>
+                <div>
+                  <img src="./images/green-arrow.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- == Review == -->
+  <section class=" w-[100%]">
+    <div class="max-w-5xl mx-auto px-[30px] py-[50px] text-black bg-[#F6F6F6]">
+      <h2 class="text-center capitalize text-3xl mb-7 lg:w-[40%]  mx-auto">what our customers are <span
+          class="text-[#B5AA13]">saying</span> about</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_2fr_1fr] gap-3">
+        <div class="flex flex-col  gap-5 ">
+          <div class="mb-[50px] ">
+            <img src="./images/green-arrow.png" alt="">
+          </div>
+          <div>
+            <img src="./images/alex.png" alt="">
+          </div>
+        </div>
+        <!--  -->
+        <div class="bg-[#FFFFFF] rounded-2xl text-black p-3">
+          <div class="flex flex-col lg:flex-row gap-2">
+            <div class="w-full h-full object-cover ">
+              <img src="./images/coat.png" alt="">
+            </div>
+            <div class="flex flex-col gap-3 w-[100%]">
+              <div class="w-[30px] mb-1">
+                <img src="./images/quote.png" alt="">
+              </div>
+              <div>
+                <p class="lg:text-base text-[14px] ">I had an amazing experience renting a car from here. The process
+                  was quick and
+                  hasskle-free, and the
+                  vehicle was in perfect condition. Highly recommend their service!</p>
+              </div>
+              <div>
+                <p class="font-semibold mb-1">John D.</p>
+                <div class="">
+                  <img src="./images/starr.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="flex flex-col gap-[50px]">
+          <div>
+            <img src="./images/emma.png" alt="emma">
+            <div class="mt-[70px]">
+              <img src="./images/green-arrow.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- == == -->
+  <section class="w-[100%] bg-white">
+    <div class="max-w-5xl mx-auto px-[30px] py-[50px] text-black ">
+      <h2 class="text-center capitalize text-3xl mb-[50px] lg:w-[45%]  mx-auto">stay updated with the latest car <span
+          class="text-[#B5AA13]">trends</span> and <span class="text-[#B5AA13]">tips</span></h2>
+      <!--  -->
+      <div class="grid lg:grid-cols-2 gap-3">
+        <div>
+          <img src="./images/toptips.png" alt="">
+        </div>
+        <!--  -->
+        <div class="flex flex-col gap-3">
+          <div class="flex flex-row gap-2">
+            <div>
+              <img width="170px" height="170px" src="./images/maintain.png" alt="">
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="flex items-center gap-1">
+                <img src="./images/pulse.png" alt="">
+                <p class="text-[#BDBDBD] lg:text-[15px] text-[12px]">8 Oct 2024</p>
+              </div>
+              <div>
+                <p class="lg:text-base text-[12px] font-normal capitalize leading-5">how to maintain your car for
+                  long-term performance</p>
+                <a href="">
+                  <p class="mt-1 text-[#509C83] underline font-semibold">read more</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="flex flex-row gap-1">
+            <div>
+              <img width="170px" height="170px" src="./images/electric.png" alt="">
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="flex items-center gap-1">
+                <img src="./images/pulse.png" alt="">
+                <p class="text-[#BDBDBD] lg:text-[15px] text-[12px]">12 Oct 2024</p>
+              </div>
+              <div>
+                <p class="lg:text-base text-[12px] base font-normal capitalize">The future of electric vehicles: what
+                  you need to know</p>
+                <a href="">
+                  <p class="mt-1 text-[#509C83] underline font-semibold">read more</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="flex flex-row gap-1">
+            <div>
+              <img width="170px" height="170px" src="./images/renting.png" alt="">
+            </div>
+            <div class="flex flex-col gap-1">
+              <div class="flex items-center gap-1">
+                <img src="./images/pulse.png" alt="">
+                <p class="text-[#BDBDBD] lg:text-[15px] text-[12px]">26 Oct 2024</p>
+              </div>
+              <div>
+                <p class="lg:text-base text-[12px] font-normal capitalize">renting vs. buying: which option is right for
+                  you?</p>
+                <a href="">
+                  <p class="mt-1 text-[#509C83] underline font-semibold">read more</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--== == -->
+  <footer class="w-[100%] bg-[#101010] ">
+    <div class="max-w-5xl mx-auto px-[30px] py-[50px] text-white ">
+      <div class=" bg-[#04995B] p-4 rounded-2xl ">
+        <div class="flex lg:flex-row flex-col justify-between items-center gap-4 ">
+          <div class="flex flex-col gap-2">
+            <h2 class="lg:text-3xl text-2xl capitalize font-normal ">drive your dream car today!</h2>
+            <p class="text-base lg:w-[85%]">Whether you are looking to buy or rent, we have the perfect car waiting for
+              you. Browse our extensive collwction and get behind the wheel with ease.</p>
+            <div class="flex flex-row gap-2 mt-2">
+              <button
+                class="border-white border-1 text-base py-2 px-3 rounded-2xl hover:bg-white hover:text-[#04995B] active:opacity-85">Browse
+                Cars</button>
+              <button
+                class="border-white border-1 text-base py-2 px-3 rounded-2xl hover:bg-white hover:text-[#04995B] active:opacity-85">Contact
+                Us</button>
+            </div>
+          </div>
+          <div class="lg:w-[750px] w-fit">
+            <img src="./images/greenjeepp.png" alt="">
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr] gap-4 my-[50px] text-gray-400">
+        <div class="flex flex-col gap-2">
+          <div>
+            <img src="./images/logogreen.png" alt="">
+          </div>
+          <div>
+            <p class="leading-relaxed ">We are dedicated to providing the best car buying and renting experience,
+              offering a wide range of high
+              quality vehicles with excellent customer service</p>
+          </div>
+        </div>
+        <!--information  -->
+        <div class="">
+          <h4 class="font-semibold mb-4">INFORMATION</h4>
+          <ul class="space-y-2 text-sm ">
+            <li><a href="#" class="">Cars for Sale</a></li>
+            <li><a href="#" class="">Cars for Rent</a></li>
+            <li><a href="#" class="">Financing</a></li>
+            <li><a href="#" class="">About Us</a></li>
+            <li><a href="#" class="">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- contact -->
+        <div>
+          <h4 class="font-semibold mb-4">CONTACT</h4>
+          <div class="space-y-2 text-sm ">
+            <div class="flex items-center gap-2">
+              <img src="./images/callicon.png" alt="">
+              <p><a href="#">+1-800-123-4567</a></p>
+            </div>
+            <div class="flex items-center gap-2 ">
+              <img src="./images/location.png" alt="">
+              <p> 73 Main Street, 5th block New York City</p>
+            </div>
+          </div>
+        </div>
+        <!--social media  -->
+        <div>
+          <h4 class=" font-semibold mb-4">SOCIAL MEDIA</h4>
+          <ul class="space-y-2 text-sm ">
+            <li><a href="#" class="">Facebook</a></li>
+            <li><a href="#" class="">Instagram</a></li>
+            <li><a href="#" class="">Twitter</a></li>
+            <li><a href="#" class="">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- underline -->
+      <div class="border-1 border-gray-400 mb-10"></div>
+      <!--  -->
+      <div class="flex justify-between items-center gap-4 text-gray-400">
+        <div>
+          <p class="text-sm ">© 2024 LUXEDRIVE. All Rights Reserved.</p>
+        </div>
+        <div>
+          <p class="text-sm ">Terms of Services</p>
+        </div>
+        <div>
+          <p class="text-sm ">Privacy Policy</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./script.js"></script>
+</body>
+
+</html>
