@@ -10,59 +10,67 @@
 </head>
 
 <body class="">
-  <header class="bg-[#1F1F1F] W-[100%] sticky top-0  z-50">
-    <div class="max-w-5xl mx-auto py-3 px-8">
-      <div class="flex justify-between items-center text-white ">
-        <div >
-          <img src="./images/luxed.png" alt="">
-        </div>
-        <nav>
-          <ul class="hidden lg:flex gap-5 text-base">
-            <a href="#">
-              <li>Buy a Car</li>
-            </a>
-            <a href="#">
-              <li>Rent a Car</li>
-            </a>
-            <a href="#">
-              <li>Financing</li>
-            </a>
-            <a href="#">
-              <li>About Us</li>
-            </a>
-          </ul>
-        </nav>
-        <div class="lg:flex items-center gap-2 hidden">
-          <div>
-            <img src="./images/search.png" alt="">
-          </div>
-          <div>
-            <img src="./images/love.png" alt="">
-          </div>
-          <div>
-            <img src="./images/order.png" alt="">
-          </div>
-          <div>
-            <img src="./images/order.png" alt="">
-          </div>
-        </div>
-        <button id="menu-btn" class=" flex flex-col justify-between w-8 h-6 lg:hidden">
-          <span class="block h-1 w-full bg-white rounded transition-all"></span>
-          <span class="block h-1 w-full bg-white rounded transition-all"></span>
-          <span class="block h-1 w-full bg-white rounded transition-all"></span>
+  <header class="bg-[#1F1F1F] sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4">
+    <div class="flex items-center justify-between text-white">
+
+      <!-- Logo -->
+      <img src="./images/luxed.png" alt="Luxed" class="h-8 w-auto" />
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex gap-8 text-sm font-medium">
+        <a href="#" class="hover:text-gray-300">Buy a Car</a>
+        <a href="#" class="hover:text-gray-300">Rent a Car</a>
+        <a href="#" class="hover:text-gray-300">Financing</a>
+        <a href="#" class="hover:text-gray-300">About Us</a>
+      </nav>
+
+      <!-- Desktop Icons -->
+      <div class="hidden lg:flex items-center gap-5">
+        <!-- Search -->
+        <button class="hover:text-gray-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="m21 21-4.35-4.35m0 0A7.5 7.5 0 1 0 6 6a7.5 7.5 0 0 0 10.65 10.65Z" />
+          </svg>
+        </button>
+
+        <!-- Wishlist -->
+        <button class="hover:text-gray-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+          </svg>
+        </button>
+
+        <!-- Orders -->
+        <button class="hover:text-gray-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M20.25 7.5 12 12.75 3.75 7.5M12 12.75v7.5m8.25-12.75v9.75a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V7.5" />
+          </svg>
+        </button>
+
+        <!-- Profile -->
+        <button class="hover:text-gray-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 20.25a7.5 7.5 0 0 1 15 0" />
+          </svg>
         </button>
       </div>
+
+      <!-- Hamburger -->
+      <button id="menu-btn" class="lg:hidden flex flex-col justify-between w-7 h-6">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
     </div>
-  </header>
-  <!-- mobile nav -->
-  <div id="mobile" class="hide lg:hidden bg-[#1F1F1F] h-[100vh] w-[100%] text-white pt-[50px] fixed top-15 z-50">
-    <ul class="flex flex-col items-center gap-5 text-base font-normal">
-      <li>Buy a Car</li>
-      <li>Rent a Car</li>
-      <li>Financing</li>
-      <li>About Us</li>
-    </ul>
   </div>
+</header>
+
   <!-- == home page == -->
   <main class="bg-[#101010] w-[100%] text-white  ">
     <div class="max-w-5xl mx-auto px-[30px] py-[50px] relative">
@@ -142,94 +150,145 @@
         </div>
       </div>
       <!-- == ge -->
-      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 text-base mb-[30px] ">
-        <div class="bg-[#04995B] text-white rounded-2xl shadow-md shadow-[#101010]">
-          <div class="p-[20px] flex flex-col  gap-4">
-            <div class="flex justify-between gap-4 items-center">
-              <div>
-                <h2 class="font-semibold">2022 Tesla Model 3</h2>
-              </div>
-              <div>
-                <img src="./images/white-arrow.png" alt="">
-              </div>
-            </div>
-            <div class="flex justify-between gap-3 items-center lg:text-[15px] text-base">
-              <div>
-                <p>Price: <span class="font-semibold ">$42,000</span></p>
-              </div>
-              <div>
-                <p>Mileage: <span class="font-semibold ">15,000 miles</span></p>
-              </div>
-            </div>
-            <div>
-              <p class="text-base">Electric sedan with autopilot, full self-driving capability, and a
-                sleek design.
-                Perfect for ecoconscious drivers. </p>
-            </div>
-            <div>
-              <img src="./images/bg-green-white.png" alt="">
-            </div>
-          </div>
-        </div>
-        <!--  -->
-        <div class="bg-[#F6F6F6] text-[#838383] rounded-2xl shadow-md shadow-[#101010] ">
-          <div class="p-[20px] flex flex-col  gap-4">
-            <div class="flex justify-between gap-4 items-center">
-              <div>
-                <h2 class="font-semibold text-black">Rolls-Royce Ghost 2023</h2>
-              </div>
-              <div>
-                <img src="./images/green-arrow.png" alt="">
-              </div>
-            </div>
-            <div class="flex justify-between gap-4 items-center lg:text-[15px] text-base">
-              <div>
-                <p>Price: <span class="font-semibold text-black">$345,000</span></p>
-              </div>
-              <div>
-                <p>Mileage: <span class="font-semibold text-black">5,000 miles</span> </p>
-              </div>
-            </div>
-            <div>
-              <p class="text-base">2023 Rolls-Royce Ghost delivery luxury, V12 power, and advanced tech
-                for a
-                premium driving experience. </p>
-            </div>
-            <div>
-              <img src="./images/royswhite2.png" alt="">
-            </div>
-          </div>
-        </div>
-        <!--  -->
-        <div class="bg-[#F6F6F6] text-[#838383] rounded-2xl shadow-md shadow-[#101010]">
-          <div class="p-[20px] flex flex-col  gap-4">
-            <div class="flex justify-between gap-4 items-center ">
-              <div>
-                <h2 class="font-semibold text-black">2021 BMW X5</h2>
-              </div>
-              <div>
-                <img src="./images/green-arrow.png" alt="">
-              </div>
-            </div>
-            <div class="flex justify-between gap-4 items-center lg:text-[15px] text-base">
-              <div>
-                <p>Price: <span class="font-semibold text-black">$55,000</span></p>
-              </div>
-              <div>
-                <p>Mileage: <span class="font-semibold text-black">25,000 miles</span> </p>
-              </div>
-            </div>
-            <div>
-              <p class="text-base">Electric sedan with autopilot, full self-driving capability, and a
-                sleek design.
-                Perfect for ecoconscious drivers. </p>
-            </div>
-            <div>
-              <img src="./images/BMW X5.png" alt="">
-            </div>
-          </div>
-        </div>
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 text-base mb-[30px]">
+
+  <!-- CARD 1 -->
+  <div
+    class="group bg-[#F6F6F6] text-[#838383]
+           hover:bg-[#04995B] hover:text-white
+           rounded-2xl shadow-md shadow-[#101010]
+           transition-all duration-300 ease-in-out">
+
+    <div class="p-[20px] flex flex-col gap-4">
+
+      <div class="flex justify-between gap-4 items-center">
+        <h2 class="font-semibold text-black group-hover:text-white transition">
+          2022 Tesla Model 3
+        </h2>
+
+        <img src="./images/green-arrow.png"
+             class="block group-hover:hidden" alt="">
+        <img src="./images/white-arrow.png"
+             class="hidden group-hover:block" alt="">
       </div>
+
+      <div class="flex justify-between gap-3 items-center lg:text-[15px] text-base">
+        <p>
+          Price:
+          <span class="font-semibold text-black group-hover:text-white transition">
+            $42,000
+          </span>
+        </p>
+
+        <p>
+          Mileage:
+          <span class="font-semibold text-black group-hover:text-white transition">
+            15,000 miles
+          </span>
+        </p>
+      </div>
+
+      <p class="text-base transition">
+        Electric sedan with autopilot, full self-driving capability, and a
+        sleek design. Perfect for ecoconscious drivers.
+      </p>
+
+      <img src="./images/bg-green-white.png" alt="">
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div
+    class="group bg-[#F6F6F6] text-[#838383]
+           hover:bg-[#04995B] hover:text-white
+           rounded-2xl shadow-md shadow-[#101010]
+           transition-all duration-300 ease-in-out">
+
+    <div class="p-[20px] flex flex-col gap-4">
+
+      <div class="flex justify-between gap-4 items-center">
+        <h2 class="font-semibold text-black group-hover:text-white transition">
+          Rolls-Royce Ghost 2023
+        </h2>
+
+        <img src="./images/green-arrow.png"
+             class="block group-hover:hidden" alt="">
+        <img src="./images/white-arrow.png"
+             class="hidden group-hover:block" alt="">
+      </div>
+
+      <div class="flex justify-between gap-4 items-center lg:text-[15px] text-base">
+        <p>
+          Price:
+          <span class="font-semibold text-black group-hover:text-white transition">
+            $345,000
+          </span>
+        </p>
+
+        <p>
+          Mileage:
+          <span class="font-semibold text-black group-hover:text-white transition">
+            5,000 miles
+          </span>
+        </p>
+      </div>
+
+      <p class="text-base transition">
+        2023 Rolls-Royce Ghost delivers luxury, V12 power, and advanced tech
+        for a premium driving experience.
+      </p>
+
+      <img src="./images/royswhite2.png" alt="">
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div
+    class="group bg-[#F6F6F6] text-[#838383]
+           hover:bg-[#04995B] hover:text-white
+           rounded-2xl shadow-md shadow-[#101010]
+           transition-all duration-300 ease-in-out">
+
+    <div class="p-[20px] flex flex-col gap-4">
+
+      <div class="flex justify-between gap-4 items-center">
+        <h2 class="font-semibold text-black group-hover:text-white transition">
+          2021 BMW X5
+        </h2>
+
+        <img src="./images/green-arrow.png"
+             class="block group-hover:hidden" alt="">
+        <img src="./images/white-arrow.png"
+             class="hidden group-hover:block" alt="">
+      </div>
+
+      <div class="flex justify-between gap-4 items-center lg:text-[15px] text-base">
+        <p>
+          Price:
+          <span class="font-semibold text-black group-hover:text-white transition">
+            $55,000
+          </span>
+        </p>
+
+        <p>
+          Mileage:
+          <span class="font-semibold text-black group-hover:text-white transition">
+            25,000 miles
+          </span>
+        </p>
+      </div>
+
+      <p class="text-base transition">
+        Luxury SUV with powerful performance, premium interior, and
+        advanced driving features.
+      </p>
+
+      <img src="./images/BMW X5.png" alt="">
+    </div>
+  </div>
+
+</div>
+
     </div>
   </section>
   <!-- == == -->
@@ -398,72 +457,112 @@
     </div>
   </section>
   <!--  -->
-  <section class=" w-[100%] text-white ">
-    <div class="max-w-5xl mx-auto px-[30px] py-[50px] text-black">
-      <div>
-        <div class=" grid lg:grid-cols-2 grid-cols-1 gap-3">
-          <h2 class="capitalize text-3xl font-normal lg:w-[60%] ">frequently asked <span
-              class="text-[#B5AA13]">questions</span></h2>
-          <div class="bg-[#06985B] text-white rounded-md p-4 lg:text-[15px] text-base mb-3">
-            <div class="flex justify-between gap-4 items-center">
-              <div>
-                <h2 class="font-semibold">How can i buy a car from your website</h2>
-              </div>
-              <div>
-                <img src="./images/white-arrow.png" alt="">
-              </div>
-            </div>
-            <div>
-              <p class="text-[15px] mt-2">Simply browse our collection of cars for sale, select the one
-                that fit
-                your needs, and
-                follow the steps to complete the purchase online. Our team is here to assist if you need
-                help</p>
-            </div>
-          </div>
-        </div>
-        <!--  -->
-        <div class="grid lg:grid-cols-2 grid-cols-1 gap-3">
-          <div class="">
-            <img src="./images/redcar.png" alt="">
-          </div>
-          <div class="grid grid-row-4 gap-3">
-            <div class="bg-[#F6F6F6] text-black rounded-md p-4 lg:text-[15px] text-base shadow-black shadow-sm">
-              <div class="flex justify-between gap-4 items-center">
-                <p class="font-semibold">What are the rental terms for cars?</p>
-                <div>
-                  <img src="./images/green-arrow.png" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="bg-[#F6F6F6] text-black rounded-md p-4 lg:text-[15px] text-base shadow-black shadow-sm">
-              <div class="flex justify-between gap-4 items-center">
-                <p class="font-semibold">Do you offer financing options?</p>
-                <div>
-                  <img src="./images/green-arrow.png" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="bg-[#F6F6F6] text-black rounded-md p-4 lg:text-[15px] text-base shadow-black shadow-sm">
-              <div class="flex justify-between gap-4 items-center">
-                <p class="font-semibold">Can i test drive a car before purchasing?</p>
-                <div>
-                  <img src="./images/green-arrow.png" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="bg-[#F6F6F6] text-black rounded-md p-4 lg:text-[15px] text-base shadow-black shadow-sm">
-              <div class="flex justify-between gap-4 items-center">
-                <p class="font-semibold">What document do i need to rent a car?</p>
-                <div>
-                  <img src="./images/green-arrow.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
+  <section class="w-[100%]">
+  <div class="max-w-5xl mx-auto px-[30px] py-[50px] text-black">
+
+    <!-- Title -->
+    <div class="grid lg:grid-cols-2 grid-cols-1 gap-3 mb-6">
+      <h2 class="capitalize text-3xl font-normal lg:w-[60%]">
+        frequently asked <span class="text-[#B5AA13]">questions</span>
+      </h2>
+
+      <!-- Active FAQ -->
+      <div class="faq-item bg-[#06985B] text-white rounded-md p-4 lg:text-[15px] text-base">
+        <button class="faq-btn w-full flex justify-between items-center">
+          <h2 class="font-semibold text-left">
+            How can I buy a car from your website?
+          </h2>
+          <img src="./images/white-arrow.png"
+               class="faq-arrow transition-transform duration-300 rotate-180"
+               alt="">
+        </button>
+
+        <div class="faq-content mt-3 block">
+          <p>
+            Simply browse our collection of cars for sale, select the one that fits
+            your needs, and follow the steps to complete the purchase online.
+            Our team is here to assist if you need help.
+          </p>
         </div>
       </div>
-  </section>
+    </div>
+
+    <!-- Content -->
+    <div class="grid lg:grid-cols-2 grid-cols-1 gap-3">
+      <div>
+        <img src="./images/redcar.png" alt="">
+      </div>
+
+      <div class="grid gap-3">
+
+        <!-- FAQ ITEM -->
+        <div class="faq-item bg-[#F6F6F6] rounded-md p-4 shadow-sm">
+          <button class="faq-btn w-full flex justify-between items-center">
+            <p class="font-semibold">What are the rental terms for cars?</p>
+            <img src="./images/green-arrow.png"
+                 class="faq-arrow transition-transform duration-300"
+                 alt="">
+          </button>
+          <div class="faq-content hidden mt-3 text-[15px]">
+            <p>
+              Our rental terms vary by vehicle. Rentals can be daily, weekly,
+              or monthly and require valid ID and license.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ ITEM -->
+        <div class="faq-item bg-[#F6F6F6] rounded-md p-4 shadow-sm">
+          <button class="faq-btn w-full flex justify-between items-center">
+            <p class="font-semibold">Do you offer financing options?</p>
+            <img src="./images/green-arrow.png"
+                 class="faq-arrow transition-transform duration-300"
+                 alt="">
+          </button>
+          <div class="faq-content hidden mt-3 text-[15px]">
+            <p>
+              Yes, we offer flexible financing options depending on your
+              eligibility and credit profile.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ ITEM -->
+        <div class="faq-item bg-[#F6F6F6] rounded-md p-4 shadow-sm">
+          <button class="faq-btn w-full flex justify-between items-center">
+            <p class="font-semibold">Can I test drive a car before purchasing?</p>
+            <img src="./images/green-arrow.png"
+                 class="faq-arrow transition-transform duration-300"
+                 alt="">
+          </button>
+          <div class="faq-content hidden mt-3 text-[15px]">
+            <p>
+              Yes, test drives are available by appointment for selected vehicles.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ ITEM -->
+        <div class="faq-item bg-[#F6F6F6] rounded-md p-4 shadow-sm">
+          <button class="faq-btn w-full flex justify-between items-center">
+            <p class="font-semibold">What documents do I need to rent a car?</p>
+            <img src="./images/green-arrow.png"
+                 class="faq-arrow transition-transform duration-300"
+                 alt="">
+          </button>
+          <div class="faq-content hidden mt-3 text-[15px]">
+            <p>
+              A valid driver’s license, government-issued ID, and a refundable
+              security deposit are required.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
   <!-- == Review == -->
   <section class=" w-[100%]">
     <div class="max-w-5xl mx-auto px-[30px] py-[50px] text-black bg-[#F6F6F6]">

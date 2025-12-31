@@ -6,3 +6,23 @@
 {
     display: none;
 }
+
+.line {
+    height: 3px;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+
+  .open .line:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+  }
+
+  .open .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .open .line:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10px);
+  }
